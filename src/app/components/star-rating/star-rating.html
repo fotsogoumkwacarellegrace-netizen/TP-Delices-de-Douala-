@@ -1,0 +1,10 @@
+<div class="stars-wrapper d-flex align-items-center gap-2">
+  @for (star of stars; track star) {
+    <span
+      class="star-icon"
+      [class.gold]="star <= CurrentRating()"
+      (click)="setRating(star); $event.stopPropagation()">
+      &#9733;
+    </span>
+  }
+</div>

@@ -1,0 +1,39 @@
+footer {
+  background-color: #3d2817 !important;
+  border-top: 1px solid #f4c430;
+  margin-top: 0 !important;
+  padding: 0.75rem 0 !important;
+  color: #FAF3E0;
+}
+
+footer h6 {
+  color: #f4c430;
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem !important;
+}
+
+footer p {
+  color: #FAF3E0 !important;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+footer .container {
+  max-width: 1180px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  footer, .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Tablette */
+@media (max-width: 900px) {
+  footer, .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}

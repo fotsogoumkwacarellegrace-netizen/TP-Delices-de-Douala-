@@ -1,0 +1,15 @@
+<header class="navbar navbar-dark bg-dark shadow-sm px-4 py-4 d-flex justify-content-between align-items-center">
+  <div class="navbar-brand d-flex flex-column gap-1">
+    <h1 class="h2 m-0 fw-bold tracking-tight" style="color: #f4c430;">⚜️Délices de Douala👌🏾</h1>
+    <p class="m-0 text-muted">Guide des meilleurs restaurants camerounais</p>
+  </div>
+
+  <div class="counter-badge px-4 py-2 rounded-3 bg-light text-dark fw-bold border shadow-sm d-flex align-items-center gap-4">
+    <span class="star-icon">⭐</span>
+    <span class="h5 m-2">{{ RatedCount() }} / 6</span>
+    @if (RatedCount() > 0){
+      <p class="m-2">= Moyenne globale : {{averageRating() | number:'1.1-1'}}/ 5</p>
+    }
+    <span class="text-muted fw-normal">restaurants notés</span>
+  </div>
+</header>

@@ -1,0 +1,41 @@
+header {
+  border-bottom: none;
+  padding: 20px;
+  background-color: #3d2817;
+  color: #FAF3E0;
+}
+
+header .navbar-brand h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #f4c430;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+header .navbar-brand p {
+  font-size: 0.95rem;
+  color: #c9c9c9;
+  margin: 0;
+}
+
+.counter-badge {
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  background-color: #f4c430 !important;
+  color: #3d2817 !important;
+}
+
+.star-icon {
+  color: #f4c430;
+  font-size: 1.3rem;
+}
+
+.counter-badge .h5 {
+  color: #3d2817 !important;
+  font-weight: 700;
+}
+
+header:hover .counter-badge {
+  transform: scale(1.05);
+}

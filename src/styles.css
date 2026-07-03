@@ -1,1 +1,82 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #faf8f3;
+  color: #2c2c2c;
+}
+
+app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Bootstrap utility overrides */
+.rounded-3 {
+  border-radius: 1rem;
+}
+
+.rounded-2 {
+  border-radius: 0.5rem;
+}
+
+/* Link styling */
+a {
+  color: #f4c430;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #e6b800;
+}
+
+/* Text utilities */
+.text-muted {
+  color: #999 !important;
+}
+
+.text-dark {
+  color: #3d2817 !important;
+}
+
+/* Button utilities */
+.btn {
+  transition: all 0.2s ease;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Shadow utilities */
+.shadow-sm {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12) !important;
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+}

@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#d4a574"/>
+  <!-- Building -->
+  <rect x="50" y="90" width="300" height="160" fill="#2d1b0a"/>
+  <!-- Japanese style roof -->
+  <polygon points="50,90 200,20 350,90" fill="#8b0000"/>
+  <!-- Door -->
+  <rect x="175" y="180" width="50" height="70" fill="#1a1a1a"/>
+  <!-- Decorative elements -->
+  <circle cx="75" cy="130" r="20" fill="#ffd700"/>
+  <circle cx="325" cy="130" r="20" fill="#ffd700"/>
+  <!-- Windows -->
+  <rect x="100" y="110" width="50" height="50" fill="#ffd700" transform="rotate(45 125 135)"/>
+  <rect x="200" y="110" width="50" height="50" fill="#ffd700" transform="rotate(45 225 135)"/>
+  <!-- Sign -->
+  <text x="200" y="60" font-size="22" fill="#ffd700" text-anchor="middle" font-weight="bold">MAKI</text>
+  <text x="200" y="80" font-size="14" fill="#ffd700" text-anchor="middle">RESTAURANT</text>
+</svg>

@@ -1,0 +1,11 @@
+main {
+  min-height: calc(100vh - 70px);
+  background-color: rgb(241, 217, 197);
+  padding: 2rem 0;
+}
+
+main.container {
+  width: 100%;
+  max-width: none;
+  padding: 2rem !important;
+}

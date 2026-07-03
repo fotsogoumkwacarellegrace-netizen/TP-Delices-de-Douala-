@@ -1,0 +1,37 @@
+<div class="restaurant-list container">
+  <div class="restaurant-grid">
+    @for (restaurant of restaurants(); track restaurant.id) {
+      <div class="restaurant-list-item">
+        <app-restaurant-card
+          [restaurant]="restaurant"
+          (restaurantRated)="onRestaurantRated($event)"
+          (displayRestaurantViewModal)="onDisplayRestaurantViewModal($event)">
+        </app-restaurant-card>
+      </div>
+    }
+  </div>
+</div>
+
+@if (isDisplayModal()) {
+  @if (modalRestaurant(); as restaurant) {
+    <div class="restaurant-modal-backdrop" (click)="onCloseModal()">
+      <section class="restaurant-modal" role="dialog" aria-modal="true" [attr.aria-label]="restaurant.name" (click)="$event.stopPropagation()">
+        <button class="restaurant-modal-close" type="button" aria-label="Close" (click)="onCloseModal()">x</button>
+
+        <img class="restaurant-modal-image" [src]="restaurant.image" [alt]="restaurant.name">
+
+        <div class="restaurant-modal-body">
+          <h2>{{ restaurant.name }}</h2>
+          <p class="restaurant-modal-muted">{{ restaurant.district }}</p>
+          <p>{{ restaurant.specialty }}</p>
+
+          @if (restaurant.currentRating > 0) {
+            <p class="restaurant-modal-rating">Note: {{ restaurant.currentRating }}/5</p>
+          } @else {
+            <p class="restaurant-modal-rating">Pas encore note</p>
+          }
+        </div>
+      </section>
+    </div>
+  }
+}

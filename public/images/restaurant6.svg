@@ -1,0 +1,20 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#1a1a1a"/>
+  <!-- Building -->
+  <rect x="40" y="80" width="320" height="170" fill="#111"/>
+  <!-- Large neon sign -->
+  <text x="200" y="55" font-size="32" fill="#00ff00" text-anchor="middle" font-weight="bold" font-family="monospace">Le QG</text>
+  <!-- Windows -->
+  <rect x="60" y="100" width="80" height="80" fill="#003300" stroke="#00ff00" stroke-width="2"/>
+  <rect x="160" y="100" width="80" height="80" fill="#003300" stroke="#00ff00" stroke-width="2"/>
+  <rect x="260" y="100" width="80" height="80" fill="#003300" stroke="#00ff00" stroke-width="2"/>
+  <!-- Door -->
+  <rect x="175" y="210" width="50" height="40" fill="#004400" stroke="#00ff00" stroke-width="2"/>
+  <!-- Lights and details -->
+  <circle cx="100" cy="140" r="6" fill="#00ff00"/>
+  <circle cx="200" cy="140" r="6" fill="#00ff00"/>
+  <circle cx="300" cy="140" r="6" fill="#00ff00"/>
+  <!-- More neon details -->
+  <line x1="20" y1="200" x2="380" y2="200" stroke="#00ff00" stroke-width="1" opacity="0.5"/>
+</svg>
